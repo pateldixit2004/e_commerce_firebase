@@ -40,15 +40,18 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             SizedBox(height: 15,),
 
-            Container(
-              height: 4.h,
-              width: 95.h,
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(5.sp)
+            InkWell(
 
+              child: Container(
+                height: 5.h,
+                width: 95.h,
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  borderRadius: BorderRadius.circular(5.sp)
+
+                ),
+                child: Center(child: Text("Sign In",style: TextStyle(fontWeight: FontWeight.bold),)),
               ),
-              child: Center(child: Text("Sign In",style: TextStyle(fontWeight: FontWeight.bold),)),
             )
           ],
         ),
